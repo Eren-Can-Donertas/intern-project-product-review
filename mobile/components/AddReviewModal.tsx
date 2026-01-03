@@ -139,7 +139,7 @@ const AddReviewModalContent: React.FC<Omit<AddReviewModalProps, 'visible'>> = ({
               textAlignVertical="top"
             />
             <Text style={[styles.charCount, { color: colors.mutedForeground }]}>
-              Minimum 10 characters ({comment.length}/10)
+              Minimum 10 characters ({comment.trim().length}/10)
             </Text>
           </View>
 
